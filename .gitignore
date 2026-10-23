@@ -1,0 +1,10 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Operating system junk
+.DS_Store
+Thumbs.db
+
+# VS Code editor settings (optional, but keeps workspace clean)
+.vscode/
