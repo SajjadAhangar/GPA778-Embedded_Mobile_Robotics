@@ -1,0 +1,3 @@
+[console_scripts]
+twist = jerro_navigation.twist_to_motors:main
+

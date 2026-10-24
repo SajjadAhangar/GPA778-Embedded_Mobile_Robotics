@@ -1,0 +1,38 @@
+[3.129s] Invoking command in '/home/ubuntu/ros2_ws/src/jerro_navigation': PYTHONPATH=/home/ubuntu/ros2_ws/src/jerro_navigation/build/jerro_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/src/jerro_navigation/install/jerro_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/jerro_navigation build --build-base /home/ubuntu/ros2_ws/src/jerro_navigation/build/jerro_navigation/build install --record /home/ubuntu/ros2_ws/src/jerro_navigation/build/jerro_navigation/install.log --single-version-externally-managed install_data
+[4.357s] running egg_info
+[4.359s] creating build/jerro_navigation/jerro_navigation.egg-info
+[4.360s] writing build/jerro_navigation/jerro_navigation.egg-info/PKG-INFO
+[4.361s] writing dependency_links to build/jerro_navigation/jerro_navigation.egg-info/dependency_links.txt
+[4.362s] writing entry points to build/jerro_navigation/jerro_navigation.egg-info/entry_points.txt
+[4.363s] writing requirements to build/jerro_navigation/jerro_navigation.egg-info/requires.txt
+[4.363s] writing top-level names to build/jerro_navigation/jerro_navigation.egg-info/top_level.txt
+[4.364s] writing manifest file 'build/jerro_navigation/jerro_navigation.egg-info/SOURCES.txt'
+[4.371s] reading manifest file 'build/jerro_navigation/jerro_navigation.egg-info/SOURCES.txt'
+[4.375s] writing manifest file 'build/jerro_navigation/jerro_navigation.egg-info/SOURCES.txt'
+[4.375s] running build
+[4.376s] running build_py
+[4.376s] creating /home/ubuntu/ros2_ws/src/jerro_navigation/build/jerro_navigation/build
+[4.377s] creating /home/ubuntu/ros2_ws/src/jerro_navigation/build/jerro_navigation/build/lib
+[4.377s] creating /home/ubuntu/ros2_ws/src/jerro_navigation/build/jerro_navigation/build/lib/jerro_navigation
+[4.378s] copying jerro_navigation/__init__.py -> /home/ubuntu/ros2_ws/src/jerro_navigation/build/jerro_navigation/build/lib/jerro_navigation
+[4.378s] copying jerro_navigation/twist_to_motors.py -> /home/ubuntu/ros2_ws/src/jerro_navigation/build/jerro_navigation/build/lib/jerro_navigation
+[4.384s] running install
+[4.385s] running install_lib
+[4.388s] creating /home/ubuntu/ros2_ws/src/jerro_navigation/install/jerro_navigation/lib/python3.10/site-packages/jerro_navigation
+[4.389s] copying /home/ubuntu/ros2_ws/src/jerro_navigation/build/jerro_navigation/build/lib/jerro_navigation/__init__.py -> /home/ubuntu/ros2_ws/src/jerro_navigation/install/jerro_navigation/lib/python3.10/site-packages/jerro_navigation
+[4.389s] copying /home/ubuntu/ros2_ws/src/jerro_navigation/build/jerro_navigation/build/lib/jerro_navigation/twist_to_motors.py -> /home/ubuntu/ros2_ws/src/jerro_navigation/install/jerro_navigation/lib/python3.10/site-packages/jerro_navigation
+[4.393s] byte-compiling /home/ubuntu/ros2_ws/src/jerro_navigation/install/jerro_navigation/lib/python3.10/site-packages/jerro_navigation/__init__.py to __init__.cpython-310.pyc
+[4.395s] byte-compiling /home/ubuntu/ros2_ws/src/jerro_navigation/install/jerro_navigation/lib/python3.10/site-packages/jerro_navigation/twist_to_motors.py to twist_to_motors.cpython-310.pyc
+[4.396s] Sorry: TabError: inconsistent use of tabs and spaces in indentation (twist_to_motors.py, line 99)
+[4.396s] running install_data
+[4.397s] creating /home/ubuntu/ros2_ws/src/jerro_navigation/install/jerro_navigation/share/ament_index
+[4.397s] creating /home/ubuntu/ros2_ws/src/jerro_navigation/install/jerro_navigation/share/ament_index/resource_index
+[4.398s] creating /home/ubuntu/ros2_ws/src/jerro_navigation/install/jerro_navigation/share/ament_index/resource_index/packages
+[4.398s] copying resource/jerro_navigation -> /home/ubuntu/ros2_ws/src/jerro_navigation/install/jerro_navigation/share/ament_index/resource_index/packages
+[4.398s] copying package.xml -> /home/ubuntu/ros2_ws/src/jerro_navigation/install/jerro_navigation/share/jerro_navigation
+[4.399s] running install_egg_info
+[4.406s] Copying build/jerro_navigation/jerro_navigation.egg-info to /home/ubuntu/ros2_ws/src/jerro_navigation/install/jerro_navigation/lib/python3.10/site-packages/jerro_navigation-0.0.0-py3.10.egg-info
+[4.412s] running install_scripts
+[4.515s] Installing twist script to /home/ubuntu/ros2_ws/src/jerro_navigation/install/jerro_navigation/lib/jerro_navigation
+[4.518s] writing list of installed files to '/home/ubuntu/ros2_ws/src/jerro_navigation/build/jerro_navigation/install.log'
+[4.656s] Invoked command in '/home/ubuntu/ros2_ws/src/jerro_navigation' returned '0': PYTHONPATH=/home/ubuntu/ros2_ws/src/jerro_navigation/build/jerro_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/src/jerro_navigation/install/jerro_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/jerro_navigation build --build-base /home/ubuntu/ros2_ws/src/jerro_navigation/build/jerro_navigation/build install --record /home/ubuntu/ros2_ws/src/jerro_navigation/build/jerro_navigation/install.log --single-version-externally-managed install_data

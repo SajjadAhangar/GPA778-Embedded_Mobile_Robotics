@@ -1,0 +1,36 @@
+running egg_info
+creating build/jerro_navigation/jerro_navigation.egg-info
+writing build/jerro_navigation/jerro_navigation.egg-info/PKG-INFO
+writing dependency_links to build/jerro_navigation/jerro_navigation.egg-info/dependency_links.txt
+writing entry points to build/jerro_navigation/jerro_navigation.egg-info/entry_points.txt
+writing requirements to build/jerro_navigation/jerro_navigation.egg-info/requires.txt
+writing top-level names to build/jerro_navigation/jerro_navigation.egg-info/top_level.txt
+writing manifest file 'build/jerro_navigation/jerro_navigation.egg-info/SOURCES.txt'
+reading manifest file 'build/jerro_navigation/jerro_navigation.egg-info/SOURCES.txt'
+writing manifest file 'build/jerro_navigation/jerro_navigation.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ubuntu/ros2_ws/src/jerro_navigation/build/jerro_navigation/build
+creating /home/ubuntu/ros2_ws/src/jerro_navigation/build/jerro_navigation/build/lib
+creating /home/ubuntu/ros2_ws/src/jerro_navigation/build/jerro_navigation/build/lib/jerro_navigation
+copying jerro_navigation/__init__.py -> /home/ubuntu/ros2_ws/src/jerro_navigation/build/jerro_navigation/build/lib/jerro_navigation
+copying jerro_navigation/twist_to_motors.py -> /home/ubuntu/ros2_ws/src/jerro_navigation/build/jerro_navigation/build/lib/jerro_navigation
+running install
+running install_lib
+creating /home/ubuntu/ros2_ws/src/jerro_navigation/install/jerro_navigation/lib/python3.10/site-packages/jerro_navigation
+copying /home/ubuntu/ros2_ws/src/jerro_navigation/build/jerro_navigation/build/lib/jerro_navigation/__init__.py -> /home/ubuntu/ros2_ws/src/jerro_navigation/install/jerro_navigation/lib/python3.10/site-packages/jerro_navigation
+copying /home/ubuntu/ros2_ws/src/jerro_navigation/build/jerro_navigation/build/lib/jerro_navigation/twist_to_motors.py -> /home/ubuntu/ros2_ws/src/jerro_navigation/install/jerro_navigation/lib/python3.10/site-packages/jerro_navigation
+byte-compiling /home/ubuntu/ros2_ws/src/jerro_navigation/install/jerro_navigation/lib/python3.10/site-packages/jerro_navigation/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/src/jerro_navigation/install/jerro_navigation/lib/python3.10/site-packages/jerro_navigation/twist_to_motors.py to twist_to_motors.cpython-310.pyc
+Sorry: TabError: inconsistent use of tabs and spaces in indentation (twist_to_motors.py, line 99)
+running install_data
+creating /home/ubuntu/ros2_ws/src/jerro_navigation/install/jerro_navigation/share/ament_index
+creating /home/ubuntu/ros2_ws/src/jerro_navigation/install/jerro_navigation/share/ament_index/resource_index
+creating /home/ubuntu/ros2_ws/src/jerro_navigation/install/jerro_navigation/share/ament_index/resource_index/packages
+copying resource/jerro_navigation -> /home/ubuntu/ros2_ws/src/jerro_navigation/install/jerro_navigation/share/ament_index/resource_index/packages
+copying package.xml -> /home/ubuntu/ros2_ws/src/jerro_navigation/install/jerro_navigation/share/jerro_navigation
+running install_egg_info
+Copying build/jerro_navigation/jerro_navigation.egg-info to /home/ubuntu/ros2_ws/src/jerro_navigation/install/jerro_navigation/lib/python3.10/site-packages/jerro_navigation-0.0.0-py3.10.egg-info
+running install_scripts
+Installing twist script to /home/ubuntu/ros2_ws/src/jerro_navigation/install/jerro_navigation/lib/jerro_navigation
+writing list of installed files to '/home/ubuntu/ros2_ws/src/jerro_navigation/build/jerro_navigation/install.log'
