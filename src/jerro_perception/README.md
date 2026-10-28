@@ -1,6 +1,7 @@
 # Jerro Perception (`jerro_perception`)
 
-A ROS 2 perception package designed for real-time mobile robot sensor processing, featuring OpenCV-based camera edge detection and 2D-to-3D LiDAR point cloud transformation on the Jerro platform.
+A ROS 2 perception package designed for real-time mobile robot sensor processing, featuring OpenCV-based camera edge detection, 2D LiDAR processing, and **3D volumetric point cloud scanning via a servo-actuated LiDAR mount and Action Server coordination**.
+
 
 ## Architecture & Node Details
 
@@ -23,6 +24,19 @@ Processes 2D laser scans from the Slamtec S2 LiDAR and translates them into Cart
 - **Published Topics**:
   - **`/points`** (`sensor_msgs/msg/PointCloud2`): Transformed 3D point cloud data ($x, y, z$ Cartesian coordinates) ready for RViz visualization and spatial mapping.
 
+### 3. LiDAR Processor Node (`lidar_processor_node`)
+Processes 2D laser scans and coordinates a servo sweep to assemble full 3D point clouds.
+- **Subscribed Topics**:
+  - **`/scan`** (`sensor_msgs/msg/LaserScan`): Polar coordinate distance measurements (using `sensor_data` Best-Effort QoS).
+- **Published Topics**:
+  - **`/points`** (`sensor_msgs/msg/PointCloud2`): Real-time 2D-to-3D Cartesian point cloud.
+  - **`perception/lidar_pc2`** (`sensor_msgs/msg/PointCloud2`): Assembled 3D volumetric point cloud published upon completion of an action scan.
+- **Action Server**:
+  - **`/perception/start_scan`** (`jerro_msgs/action/StartScan`): Coordinates the servo sweep sequence, manages real-time feedback progress, and triggers point cloud assembly.
+- **Service Client**:
+  - **`/set_servo_pos`** (`jerro_msgs/srv/SetServoPos`): Commands angular positioning of the LiDAR mounting servo.
+ 
+ 
 ---
 
 ## Prerequisites & Dependencies
@@ -42,10 +56,18 @@ This package depends on hardware drivers and utility packages provided by Lab-CO
 To launch the complete perception pipeline (camera stream, Canny edge detection, LiDAR processing, and S2 driver) with a single command:
 
 Terminal 1: Run the Perception Launch File **ros2 launch jerro_perception perception_launch.py**
+   
+Terminal 2: Launch jerro-description **ros2 launch jerro_description jerro_description.launch.py**
 
-Terminal 2: Inspect active topics and data publishing rates: **ros2 topic list**, **ros2 topic hz /image_canny**, and **ros2 topic hz /points**
+Terminal 3: Run the jerro_driver to move the servo: **ros2 run jerro_drivers servomotor*
 
-- Connect via RViz to add an Image display panel for `/image_canny` and a `PointCloud2` display panel for `/points`.
+Terminal 4: Trigger a 3D Volumetric Scan by by sending a goal **ros2 action send_goal /perception/start_scan jerro_msgs/action/StartScan "{start: true}" --feedback**
+
+- RViz Visualization:
+
+Connect via RViz2, set the Fixed Frame to `base_link`, add an Image display panel for `/image_canny`, and add a `PointCloud2` display panel for both `/points` and `perception/lidar_pc2`.
 
 Have fun.
+
+
 
