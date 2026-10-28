@@ -24,6 +24,7 @@ This package relies on official hardware driver and message packages provided by
    Clone the necessary driver and message packages into your workspace's `src` directory:
    ```bash
    git clone [https://github.com/Lab-CORO/jerro](https://github.com/Lab-CORO/jerro)
+   ```
    
 **Execution Workflow**
 To operate the robot live, you must run three separate terminals concurrently. Open three terminal windows or tabs and execute the following steps in order:
