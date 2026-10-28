@@ -11,7 +11,7 @@ The core node (`odometry`) computes the robot's pose in continuous 2D space from
 - **`/encoder_b`** (`std_msgs/msg/Int32`): Raw encoder tick count from the right wheel.
 
 ### Broadcasted Transforms
-- **`odom`** $\rightarrow$ **`base_link`** (`geometry_msgs/msg/TransformStamped`): Dynamic transform calculated via differential drive kinematics using robot geometry parameters ($L = 0.1655\,\text{m}$, $r = 0.035\,\text{m}$, $\text{pulses\_per\_revolution} = 1943$).
+- **`odom`** $\rightarrow$ **`base_link`** (`geometry_msgs/msg/TransformStamped`): Dynamic transform calculated via differential drive kinematics using robot geometry parameters ($L = 0.1655\,\text{m}$, $r = 0.035\,\text{m}$, `pulses_per_revolution` $= 1943$).
 
 ---
 
