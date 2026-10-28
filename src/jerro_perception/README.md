@@ -59,7 +59,7 @@ Terminal 1: Run the Perception Launch File **ros2 launch jerro_perception percep
    
 Terminal 2: Launch jerro-description **ros2 launch jerro_description jerro_description.launch.py**
 
-Terminal 3: Run the jerro_driver to move the servo: **ros2 run jerro_drivers servomotor*
+Terminal 3: Run the jerro_driver to move the servo: **ros2 run jerro_drivers servomotor**
 
 Terminal 4: Trigger a 3D Volumetric Scan by by sending a goal **ros2 action send_goal /perception/start_scan jerro_msgs/action/StartScan "{start: true}" --feedback**
 
